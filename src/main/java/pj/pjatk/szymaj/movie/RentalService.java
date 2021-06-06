@@ -16,7 +16,7 @@ public class RentalService {
         return restTemplate.getForEntity("http://localhost:8080/movies/" + id, Movie.class).getBody();
     }
 
-    public Movie returnMovie(Long id) {
-        return restTemplate.getForEntity("http://localhost:8080/movies/makeAvailable/" + id, Movie.class).getBody();
+    public void returnMovie(Long id) {
+        restTemplate.put("http://localhost:8080/movies/makeAvailable/" + id, Movie.class);
     }
 }
