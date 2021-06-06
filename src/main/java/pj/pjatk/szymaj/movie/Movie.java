@@ -5,7 +5,7 @@ public class Movie {
     private Long id;
     private String title;
     private Category category;
-    private boolean isavailable = false;
+    private boolean isavailable;
 
     public Movie(){}
     public Movie(String n, Category c){
