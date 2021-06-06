@@ -8,8 +8,6 @@ import pj.pjatk.szymaj.movie.Movie;
 @RestController
 public class RentalRestController {
 
-    RestTemplate restTemplate = new RestTemplate();
-
     @GetMapping("/{id}")
     public ResponseEntity<Movie> getMovie(@PathVariable Long id) {
         return
