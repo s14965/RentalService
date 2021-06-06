@@ -12,11 +12,13 @@ public class Movie {
         id = Long.valueOf(0);
         title = n;
         category = c;
+        isavailable = false;
     }
     public Movie(Long i, String n, Category c){
         id = i;
         title = n;
         category = c;
+        isavailable = false;
     }
 
     public Long getId() {

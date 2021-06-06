@@ -1,5 +1,6 @@
 D:\Java Sandbox\RentalService\src\main\java\pj\pjatk\szymaj\RentalServiceApplication.java
+D:\Java Sandbox\RentalService\src\main\java\pj\pjatk\szymaj\RentalRestController.java
 D:\Java Sandbox\RentalService\src\main\java\pj\pjatk\szymaj\movie\Movie.java
-D:\Java Sandbox\RentalService\src\main\java\pj\pjatk\szymaj\RestTemplate.java
-D:\Java Sandbox\RentalService\src\main\java\pj\pjatk\szymaj\RestController.java
+D:\Java Sandbox\RentalService\src\main\java\pj\pjatk\szymaj\RestTemplateConfig.java
 D:\Java Sandbox\RentalService\src\main\java\pj\pjatk\szymaj\movie\Category.java
+D:\Java Sandbox\RentalService\src\main\java\pj\pjatk\szymaj\movie\RentalService.java
