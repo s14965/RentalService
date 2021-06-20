@@ -1,10 +1,16 @@
 package pj.pjatk.szymaj.movie;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class Movie {
 
+    @ApiModelProperty(notes = "This is id of the movie", required = true, value = "some value", example = "64")
     private Long id;
+    @ApiModelProperty(notes = "This is title of the movie", required = true, value = "some value", example = "movie name")
     private String title;
+    @ApiModelProperty(notes = "This is category of the movie", required = true, value = "some value", example = "Horror")
     private Category category;
+    @ApiModelProperty(notes = "This is availablity of the movie", required = true, value = "some value", example = "available")
     private boolean isavailable;
 
     public Movie(){}

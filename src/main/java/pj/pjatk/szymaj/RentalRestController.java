@@ -36,14 +36,36 @@ public class RentalRestController {
         return ResponseEntity.ok().body(rentalService.getMovieById(id));
     }
 
+    @ApiOperation(value = "Return movie for given ID",
+            response = Movie.class,
+            notes = "This method will return movie for given id or http 404 if not found")
+
     @PutMapping("return/{id}")
-    public ResponseEntity<Void> returnMovie(@PathVariable Long id){
+    public ResponseEntity<Void> returnMovie(
+            @ApiParam(name = "id",
+                    type = "long",
+                    value = "1",
+                    example = "1",
+                    required = true,
+                    defaultValue = "1")
+            @PathVariable Long id){
         rentalService.returnMovie(id);
         return ResponseEntity.ok(null);
     }
 
+    @ApiOperation(value = "Rent movie for given ID",
+            response = Movie.class,
+            notes = "This method will rent movie for given id or http 404 if not found")
+
     @PutMapping("rent/{id}")
-    public ResponseEntity<Void>  rentMovie(@PathVariable Long id){
+    public ResponseEntity<Void>  rentMovie(
+            @ApiParam(name = "id",
+                type = "long",
+                value = "1",
+                example = "1",
+                required = true,
+                defaultValue = "1")
+            @PathVariable Long id){
         rentalService.rentMovie(id);
         return ResponseEntity.ok(null);
     }
